@@ -31,4 +31,4 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: Run tests
-        run: dotnet test Category=yoptest --configuration Release --no-build --logger:trx
+        run: dotnet test --filter Category=yoptest --no-build
