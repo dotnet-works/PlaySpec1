@@ -33,7 +33,7 @@ namespace PlaySpec1.SpecHooks
 
             //Config = JsonConvert.DeserializeObject<Config>(jsonContent)!;
             //_browser = new Driver(Config.browser!).Browser;
-            _browser = new Driver("chromium").Browser;
+            _browser = new Driver("chromium",true).Browser;
             return Task.CompletedTask;
         }
 
