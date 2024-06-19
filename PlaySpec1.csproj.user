@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Sample1\PlayHooks\PlayWrightHooks.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Sample2\PlayHook2\PlaywrightHooks2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SpecHooks\WebHooks.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StepDef\DateTimeSteps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StepDef\SharedContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StepDef\SocialNetSteps2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
