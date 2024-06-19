@@ -31,4 +31,4 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: Run tests
-        run: dotnet test --filter Category=yoptest --no-build
+        run: dotnet test --filter Category=yoptest
