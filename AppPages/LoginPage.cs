@@ -28,9 +28,13 @@ namespace PlaySpec1.AppPages
         public readonly string RDLoc_Gender = "//input[@name='gender'and @value='male']";
         public readonly string CKLoc_Agree = "[name=\"gdpr_agree\"]";
         public readonly string BTNLoc_Submit = "input#ossn-submit-button";
+
+        public readonly string BTNLoc_Login = "a.btn.btn-primary.btn-sm";
+        public readonly string BTNLoc_ResetPassword = "a.btn.btn-warning.btn-sm";
+        public readonly string TXTLoc_NewUserName = "[name=\"username\"]";
+        public readonly string TXTLoc_NewUserPassword = "[name=\"password\"]";
+        public readonly string BTNLoc_NewUserLogin = "input.btn.btn-primary.btn-sm";
         
-
-
 
 
 

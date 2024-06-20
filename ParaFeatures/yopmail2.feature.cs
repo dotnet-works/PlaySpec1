@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace PlaySpec1.Features
+namespace PlaySpec1.ParaFeatures
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,22 +20,24 @@ namespace PlaySpec1.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("YopMailTest1")]
-    public partial class YopMailTest1Feature
+    [NUnit.Framework.DescriptionAttribute("YopMailTest2")]
+    [NUnit.Framework.CategoryAttribute("yoptest")]
+    public partial class YopMailTest2Feature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-        private static string[] featureTags = ((string[])(null));
+        private static string[] featureTags = new string[] {
+                "yoptest"};
         
-#line 1 "yopmail.feature"
+#line 1 "yopmail2.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "YopMailTest1", null, ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "ParaFeatures", "YopMailTest2", null, ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,44 +76,13 @@ namespace PlaySpec1.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("VerifyYopInbox1")]
-        [NUnit.Framework.CategoryAttribute("yoptest")]
-        public void VerifyYopInbox1()
+        [NUnit.Framework.DescriptionAttribute("VerifyYopInbox2")]
+        public void VerifyYopInbox2()
         {
-            string[] tagsOfScenario = new string[] {
-                    "yoptest"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("VerifyYopInbox1", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 4
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("VerifyYopInbox2", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 5
-   testRunner.Given("user navigates to \"https://www.yopmail.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 6
-   testRunner.When("go to yopmail inbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("SocialTest1")]
-        [NUnit.Framework.CategoryAttribute("yoptest")]
-        public void SocialTest1()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "yoptest"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SocialTest1", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 9
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -121,11 +92,11 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 10
-   testRunner.Given("user navigates to \"https://www.opensource-socialnetwork.org/demo\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 6
+   testRunner.Given("user navigates to \"https://yopmail.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 11
-   testRunner.When("navigate to socialnetwork page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 7
+   testRunner.When("go to zoya1122 yopmail inbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             }
             this.ScenarioCleanup();

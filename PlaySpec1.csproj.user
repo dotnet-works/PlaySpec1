@@ -8,7 +8,7 @@
     <Compile Update="StepDef\DateTimeSteps.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="StepDef\SharedContext.cs">
+    <Compile Update="SpecHooks\SharedContext.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="StepDef\SocialNetSteps2.cs">

@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    
+    <None Remove="config.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="config.json" />
   </ItemGroup>
 
 
@@ -29,6 +33,10 @@
 
   <ItemGroup>
     <None Include=".github\workflows\play-runner1.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Reports\screenshots\" />
   </ItemGroup>
 
 </Project>

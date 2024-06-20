@@ -9,12 +9,11 @@ Scenario: Sample1_SocialNetwork1
    When switch to new tab
    When click on 'dob' element and enter birtdate as "20 Oct. 2000"
    Then verify birthdate should be in dd/mm/yyyy format
-   When enter user firstname
+   When enter new user data
    When open new tab and navigate to "https://www.yopmail.com"
    When verify email confirmation
 
-   #When click on 'dob' form feild and select dob as  'Jan-01-2000'
-   #Then verify birthdate should be in correct format eg;'04/01/2000'
+   
 
 
 Scenario: VerifyDOB_SocialNetwork2

@@ -1,16 +1,9 @@
-﻿using BoDi;
-using Microsoft.Playwright;
+﻿using Microsoft.Playwright;
+using NUnit.Framework;
 using PlaySpec1.AppPages;
 using PlaySpec1.SpecHooks;
-using PlaySpec1.StepDef;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
-using TechTalk.SpecFlow.CommonModels;
-using TechTalk.SpecFlow.Configuration.JsonConfig;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 
 
@@ -23,7 +16,6 @@ namespace PlaySpec1.StepDefs3
         private readonly ScenarioContext _scenarioContext;
         private readonly SharedContext _sharedContext;
         private IPage _page;
-        //private readonly IPage _page;
         private readonly DemoPage _demoPage;
         private readonly LoginPage _loginPage;
         //private readonly Config? _config;
@@ -50,6 +42,9 @@ namespace PlaySpec1.StepDefs3
 
             await _page.GotoAsync(url);
             Thread.Sleep(2000);
+            TestContext.WriteLine($"Thread-ID => {Thread.CurrentThread.ManagedThreadId}");
+            //TestContext.WriteLine($"Thread-ID=> {Task.CurrentId}");
+            
         }
 
         [When(@"navigate to socialnetwork page")]
@@ -66,21 +61,6 @@ namespace PlaySpec1.StepDefs3
             var x = _page.Context;
             Console.WriteLine(x);
             Console.WriteLine(await _page.TitleAsync());
-
-
-            // //IReadOnlyList<IPage> tabs = _page.Context.Pages;
-            //  await SwitchTabs("Open Source Social Network", _page.Context.Pages);
-            // //Thread.Sleep(2000);
-
-            // _page = _page.Context.Pages[1];
-
-            //// await _page.Context.Pages[1].BringToFrontAsync();
-
-            // await _page.Locator("[name=\"birthdate\"]").ClickAsync();
-            // await _page.Locator("//*[@class='ui-datepicker-month']").ClickAsync();
-
-
-
 
         }
 
@@ -111,8 +91,6 @@ namespace PlaySpec1.StepDefs3
 
             //await MonthOpts[10].S            //.ScrollIntoViewIfNeededAsync(new(){ Timeout = 500 });
             //await MonthOpts[10].ClickAsync();
-
-
         }
 
 
@@ -133,28 +111,77 @@ namespace PlaySpec1.StepDefs3
             _sharedContext.SharedPageContext = _page;
         }
 
-        [When(@"click on '(.*)' form feild and select month '(.*)'")]
-        public async Task selectDoB2(string fieldName, string month)
-        {
-            _page = await SwitchTabs("Welcome :", _page.Context);
-            //IReadOnlyList<IPage> tabs = this._page.Context.Pages;
-            //"Welcome : Open Source Social Network"
-            //_page = await SwitchTabs("Welcome :", _page.Context);
-            //Thread.Sleep(2000);
+        
 
+        [When(@"click on 'dob' element and enter birtdate as ""([^""]*)""")]
+        public async Task stepDob(string birthDate)
+        {
+            _page = _sharedContext.SharedPageContext;
+
+            string[] birthString = birthDate.Split(" ");
+            Thread.Sleep(200);
+
+            string patternX = @"^(\d{1}|\d{2}) ((January|Jan\.|Jan)|(February|Feb\.|Feb)|(March|Mar\.|Mar)|(April|Apr\.|Apr)|(May)|(June|Jun\.|Jun)|(July|Jul\.|Jul)|(August|Aug\.|Aug)|(September|Sep\.|Sept\.|Sept)|(October|Oct\.|Oct)|(November|Nov\.|Nov)|(December|Dec\.|Dec)) \d{4}$";
+            bool isMatch5 = Regex.IsMatch(birthDate, patternX);
+            if (isMatch5)
+            { await SetUserDob(birthString[0], birthString[1], birthString[2]); }
+            else
+            { throw new Exception("Error => Enter DOB in correct format of : day monthname year (00 March 1983)"); }
+        }
+
+        public async Task SetUserDob(string _month, string _year)
+        {
             if (!await _page.Locator("div#ui-datepicker-div").IsVisibleAsync())
             {
-                await _page.Locator("[name=\"birthdate\"]").ClickAsync();
+                await _page.Locator(_loginPage._TXTLoc_BirthDate).ClickAsync();
+                Thread.Sleep(500);
 
+                await _page.Locator("select.ui-datepicker-month").SelectOptionAsync(new[] { $"{_month}" });
+                Thread.Sleep(200);
+
+                await _page.Locator("select.ui-datepicker-year").SelectOptionAsync(new[] { $"{_year}" });
+                Thread.Sleep(200);
+
+                var todayNum = DateTime.Today.Day; //.Now.ToString("d");
+                string _dayLocator = $"//td/a[@data-date='{todayNum}']";
+                await _page.Locator(_dayLocator).ClickAsync();
+                Thread.Sleep(1500);
 
             }
 
 
-            //await _page.Locator("[name=\"birthdate\"]").ClickAsync();
-            //Thread.Sleep(200);
-            //await _page.Locator("//*[@class='ui-datepicker-month']").ClickAsync();
+        }
 
-            //IReadOnlyList<ILocator> MonthOpts = await _page.Locator("select.ui-datepicker-month>option").AllAsync();
+        public async Task SetUserDob(string _day, string _month, string _year)
+        {
+            if (!await _page.Locator("div#ui-datepicker-div").IsVisibleAsync())
+            {
+                await _page.Locator(_loginPage._TXTLoc_BirthDate).ClickAsync();
+                Thread.Sleep(500);
+
+                await _page.Locator("select.ui-datepicker-month").SelectOptionAsync(new[] { $"{_month}" });
+                Thread.Sleep(200);
+
+                await _page.Locator("select.ui-datepicker-year").SelectOptionAsync(new[] { $"{_year}" });
+                Thread.Sleep(200);
+
+                //var todayNum = DateTime.Today.Day; //.Now.ToString("d");
+                string _dayLocator = $"//td/a[@data-date='{_day}']";
+                await _page.Locator(_dayLocator).ClickAsync();
+                Thread.Sleep(1500);
+
+            }
+        }
+
+
+        [When(@"click on '(.*)' form feild and select month '(.*)'")]
+        public async Task selectDoB2(string fieldName, string month)
+        {
+            _page = await SwitchTabs("Welcome :", _page.Context);
+            if (!await _page.Locator("div#ui-datepicker-div").IsVisibleAsync())
+            {
+                await _page.Locator("[name=\"birthdate\"]").ClickAsync();
+            }
 
             await _page.Locator("select.ui-datepicker-month").SelectOptionAsync(new[] { "Jan." });
             Thread.Sleep(2000);
@@ -174,6 +201,7 @@ namespace PlaySpec1.StepDefs3
             Thread.Sleep(1500);
 
         }
+
 
         [Then(@"verify birthdate should be in dd/mm/yyyy format")]
         public async Task ValidFormat()
@@ -206,24 +234,86 @@ namespace PlaySpec1.StepDefs3
             //}
         }
 
-        [When(@"enter user firstname")]
+        [When(@"enter new user data")]
         public async Task enterdata1()
         {
-           // _page=_sharedContext.SharedPageContext;
+            List<string> userList = new string[] { "Zulu", "Max","Mint"}.ToList<string>();
+            Random randNum = new Random();
+            int userName =randNum.Next(0, userList.Count);
+            int randValue = randNum.Next(1000, 2000);
+
+            string firstName = userList[userName];
+            string newUserName = $"{firstName}_{randValue}";
+            string newUserEmail = $"{newUserName}@yopmail.com";
+
+
+
             await _page.Locator(_loginPage.TXTLoc_FirstName).ClickAsync();
-            await _page.Locator(_loginPage.TXTLoc_FirstName).FillAsync("Zumbaaaaaaa");
+            await _page.Locator(_loginPage.TXTLoc_FirstName).FillAsync(firstName);
             await _page.Locator(_loginPage.TXTLoc_LastName).FillAsync("Laaast");
-            await _page.Locator(_loginPage.TXTLoc_Email).FillAsync("zoya1122@yopmail.com");
-            await _page.Locator(_loginPage.TXTLoc_ReEmail).FillAsync("zoya1122@yopmail.com");
-            await _page.Locator(_loginPage.TXTLoc_UserName).FillAsync("zoya1122");
+            await _page.Locator(_loginPage.TXTLoc_Email).FillAsync(newUserEmail);
+            await _page.Locator(_loginPage.TXTLoc_ReEmail).FillAsync(newUserEmail);
+            await _page.Locator(_loginPage.TXTLoc_UserName).FillAsync(newUserName);
             await _page.Locator(_loginPage.TXTLoc_Password).FillAsync("Test@1234");
             await _page.Locator(_loginPage.RDLoc_Gender).ClickAsync();
             await _page.Locator(_loginPage.CKLoc_Agree).ClickAsync();
+
+            int id = Thread.CurrentThread.ManagedThreadId;
+            await _page.ScreenshotAsync(new() { Path = TestUtil.ScreenShotPath + $"newuser_{id}.png" });
             await _page.Locator(_loginPage.BTNLoc_Submit).ClickAsync();
-
-
-            Thread.Sleep(2000);
+            Thread.Sleep(15000);
+            if(await VerifyNewUserCreated())
+            {
+                _sharedContext.NEWUSEREMAIL = newUserEmail;
+            }
         }
+        
+        public async Task<bool> VerifyNewUserCreated()
+        {
+            bool userResult = false;
+            if (await _page.Locator("div.ossn-message-done").IsVisibleAsync(new() { Timeout = 10000 }))
+            {
+                string? successMessage = await _page.Locator("div.ossn-message-done").TextContentAsync();
+                if(successMessage.Contains("Your account has been registered! We have sent you an account activation email. If you didn't receive the email, please check your spam/junk folder."))
+                {
+                    TestContext.WriteLine("User Created Sucessfully");
+                    userResult = true;
+                }
+                else
+                {
+                    throw new Exception("Failde: User Not created!!!");
+                }
+            }
+            return userResult;
+            
+        }
+
+
+        [When(@"login with credentials using (.*) and (.*)")]
+        public async Task loginstep(string userName, string password)
+        {
+            _page = await SetNewPageContext();
+            
+            await _page.Locator(_loginPage.BTNLoc_Login).ClickAsync();
+            await _page.Locator(_loginPage.TXTLoc_NewUserName).ClearAsync();
+            await _page.Locator(_loginPage.TXTLoc_NewUserName).FillAsync(_sharedContext.NEWUSEREMAIL);
+            await _page.Locator(_loginPage.TXTLoc_NewUserPassword).ClearAsync();
+            await _page.Locator(_loginPage.TXTLoc_NewUserPassword).FillAsync("Test@1234");
+            await _page.Locator(_loginPage.BTNLoc_NewUserLogin).ClickAsync();
+            Thread.Sleep(9000);
+            int id = Thread.CurrentThread.ManagedThreadId;
+            await _page.ScreenshotAsync(new() { Path = TestUtil.ScreenShotPath + $"newuuserlogin_{id}.png" });
+        }
+
+        public async Task<IPage> SetNewPageContext()
+        {
+            if (_sharedContext.SharedPageContext == null)
+            { Console.WriteLine("Page Context is null No Shared context:"); }
+            else
+            { _page = _sharedContext.SharedPageContext; }
+            return _page;
+        }
+
 
         [When("verify email confirmation")]
         public async Task verifyMail()
@@ -231,7 +321,10 @@ namespace PlaySpec1.StepDefs3
 
         }
 
-        
+        public async Task enterUserDOB(string birthData)
+        {
+
+        }
 
 
 

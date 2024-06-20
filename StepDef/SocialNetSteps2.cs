@@ -27,69 +27,69 @@ namespace PlaySpec1.StepDef
             _loginPage = new LoginPage(_page);
         }
 
-        [When(@"click on 'dob' element and enter birtdate as ""([^""]*)""")]
-        public async Task stepDob(string birthDate)
-        {
-            _page = _sharedContext.SharedPageContext;
+        //[When(@"click on 'dob' element and enter birtdate as ""([^""]*)""")]
+        //public async Task stepDob(string birthDate)
+        //{
+        //    _page = _sharedContext.SharedPageContext;
 
-            string[] birthString = birthDate.Split(" ");
-            Thread.Sleep(200);
+        //    string[] birthString = birthDate.Split(" ");
+        //    Thread.Sleep(200);
 
-            string patternX = @"^(\d{1}|\d{2}) ((January|Jan\.|Jan)|(February|Feb\.|Feb)|(March|Mar\.|Mar)|(April|Apr\.|Apr)|(May)|(June|Jun\.|Jun)|(July|Jul\.|Jul)|(August|Aug\.|Aug)|(September|Sep\.|Sept\.|Sept)|(October|Oct\.|Oct)|(November|Nov\.|Nov)|(December|Dec\.|Dec)) \d{4}$";
-            bool isMatch5 = Regex.IsMatch(birthDate, patternX);
-            if (isMatch5)
-            {
-                await SetUserDob(birthString[0],birthString[1], birthString[2]);
-            }
-
-
+        //    string patternX = @"^(\d{1}|\d{2}) ((January|Jan\.|Jan)|(February|Feb\.|Feb)|(March|Mar\.|Mar)|(April|Apr\.|Apr)|(May)|(June|Jun\.|Jun)|(July|Jul\.|Jul)|(August|Aug\.|Aug)|(September|Sep\.|Sept\.|Sept)|(October|Oct\.|Oct)|(November|Nov\.|Nov)|(December|Dec\.|Dec)) \d{4}$";
+        //    bool isMatch5 = Regex.IsMatch(birthDate, patternX);
+        //    if (isMatch5)
+        //    {   await SetUserDob(birthString[0],birthString[1], birthString[2]);   }
+        //    else 
+        //    {   throw new Exception("Error => Enter DOB in correct format of : day monthname year (00 March 1983)");  }
 
 
-        }
 
-        public async Task SetUserDob(string _month,String _year)
-        {
-            if (!await _page.Locator("div#ui-datepicker-div").IsVisibleAsync())
-            {
-                await _page.Locator(_loginPage._TXTLoc_BirthDate).ClickAsync();
-                Thread.Sleep(500);
 
-                await _page.Locator("select.ui-datepicker-month").SelectOptionAsync(new[] { $"{_month}" });
-                Thread.Sleep(200);
+        //}
 
-                await _page.Locator("select.ui-datepicker-year").SelectOptionAsync(new[] { $"{_year}" });
-                Thread.Sleep(200);
+        //public async Task SetUserDob(string _month,String _year)
+        //{
+        //    if (!await _page.Locator("div#ui-datepicker-div").IsVisibleAsync())
+        //    {
+        //        await _page.Locator(_loginPage._TXTLoc_BirthDate).ClickAsync();
+        //        Thread.Sleep(500);
 
-                var todayNum = DateTime.Today.Day; //.Now.ToString("d");
-                string _dayLocator = $"//td/a[@data-date='{todayNum}']";
-                await _page.Locator(_dayLocator).ClickAsync();
-                Thread.Sleep(1500);
+        //        await _page.Locator("select.ui-datepicker-month").SelectOptionAsync(new[] { $"{_month}" });
+        //        Thread.Sleep(200);
 
-            }
+        //        await _page.Locator("select.ui-datepicker-year").SelectOptionAsync(new[] { $"{_year}" });
+        //        Thread.Sleep(200);
+
+        //        var todayNum = DateTime.Today.Day; //.Now.ToString("d");
+        //        string _dayLocator = $"//td/a[@data-date='{todayNum}']";
+        //        await _page.Locator(_dayLocator).ClickAsync();
+        //        Thread.Sleep(1500);
+
+        //    }
 
             
-        }
+        //}
 
-        public async Task SetUserDob(string _day, string _month, String _year)
-        {
-            if (!await _page.Locator("div#ui-datepicker-div").IsVisibleAsync())
-            {
-                await _page.Locator(_loginPage._TXTLoc_BirthDate).ClickAsync();
-                Thread.Sleep(500);
+        //public async Task SetUserDob(string _day, string _month, String _year)
+        //{
+        //    if (!await _page.Locator("div#ui-datepicker-div").IsVisibleAsync())
+        //    {
+        //        await _page.Locator(_loginPage._TXTLoc_BirthDate).ClickAsync();
+        //        Thread.Sleep(500);
 
-                await _page.Locator("select.ui-datepicker-month").SelectOptionAsync(new[] { $"{_month}" });
-                Thread.Sleep(200);
+        //        await _page.Locator("select.ui-datepicker-month").SelectOptionAsync(new[] { $"{_month}" });
+        //        Thread.Sleep(200);
 
-                await _page.Locator("select.ui-datepicker-year").SelectOptionAsync(new[] { $"{_year}" });
-                Thread.Sleep(200);
+        //        await _page.Locator("select.ui-datepicker-year").SelectOptionAsync(new[] { $"{_year}" });
+        //        Thread.Sleep(200);
 
-                //var todayNum = DateTime.Today.Day; //.Now.ToString("d");
-                string _dayLocator = $"//td/a[@data-date='{_day}']";
-                await _page.Locator(_dayLocator).ClickAsync();
-                Thread.Sleep(1500);
+        //        //var todayNum = DateTime.Today.Day; //.Now.ToString("d");
+        //        string _dayLocator = $"//td/a[@data-date='{_day}']";
+        //        await _page.Locator(_dayLocator).ClickAsync();
+        //        Thread.Sleep(1500);
 
-            }
-        }
+        //    }
+        //}
 
             //[When(@"click on 'dob' element and enter birtdate as ""([^""]*)""")]
             //public async Task enterDOB(string birthString)
