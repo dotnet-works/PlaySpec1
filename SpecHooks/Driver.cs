@@ -31,7 +31,11 @@ namespace PlaySpec1.SpecHooks
                 case "chromium":
                     taskIBrowser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
                     {
-                        Args = new[] { "--start-maximized" },
+                        Args = new[] { 
+                                       "--start-maximized",
+                                       "--disable-gpu",
+                                       "--no-sandbox"
+                                     },
                         Headless = this._isHeadless
                     });
                     break;
