@@ -32,7 +32,7 @@ namespace PlaySpec1.StepDef
         {
             string activationURL = null;
             await _page.Locator("//*[@id='login']").ClickAsync();
-            await _page.Locator("//*[@id='login']").FillAsync("zoya1122@yopmail.com");
+            await _page.Locator("//*[@id='login']").FillAsync("zulu1122");           //.FillAsync("zoya1122@yopmail.com");
             await _page.Locator("div#refreshbut").ClickAsync();
             var winHandle = _page.Context; //.CurrentWindowHandle;
 
