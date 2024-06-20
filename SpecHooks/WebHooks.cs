@@ -45,6 +45,8 @@ namespace PlaySpec1.SpecHooks
                 _context = await _browser.NewContextAsync(new BrowserNewContextOptions
                 {
                     ViewportSize = ViewportSize.NoViewport
+                    //ViewportSize = new ViewportSize() { Width = 1280, Height = 1024 }
+
                 });
 
                 Page = await _context.NewPageAsync();
