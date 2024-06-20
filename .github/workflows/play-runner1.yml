@@ -31,8 +31,8 @@ jobs:
       - name: Build project
         run: dotnet build 
       
-      - name: Ensure browsers are installed
-        run: pwsh playwright.ps1 install --with-deps
+      #- #name: Ensure browsers are installed
+        #run: pwsh playwright.ps1 install --with-deps
 
       - name: Run tests
         run: dotnet test --filter Category=yoptest --logger:"console;verbosity=detailed"
