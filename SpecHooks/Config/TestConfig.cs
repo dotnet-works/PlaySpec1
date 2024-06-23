@@ -19,25 +19,51 @@ namespace PlaySpec1.SpecHooks.Config
         public string? options1 { get; set; }
         public string? options2 { get; set; }
         public string? options3 { get; set; }
+        
     }
 
     public class ProjectDirPaths
     {
-        public string Reports => ProjectPath + "Reports";
+        public ProjectDirPaths()
+        {
+            Console.WriteLine("I am running");
+            //var reportPath = "../../../Reports/screenshots";
+            //if (!Directory.Exists(reportPath))
+            //{
+            //    new System.IO.DirectoryInfo(reportPath).Create();
+            //}
+        }
 
         public static string ProjectPath   
         {
             get { return Directory.GetCurrentDirectory().Split("bin")[0]; }  
         }
 
-        public static string ReportPath 
+        private  string? _reportPath;
+        public static string ReportPath
         {
-            get { return ProjectPath + "Reports"; }  
+
+            get
+
+            {
+                var reportPath = ProjectPath+"Reports/screenshots";
+                if (!Directory.Exists(reportPath))
+                { new System.IO.DirectoryInfo(reportPath).Create(); }
+                return ProjectPath + "Reports";
+            }
         }
+        
 
         public static string ScreenShotPath
         {
-            get { return ProjectPath + "Reports/screenshots/"; }
+            get {
+                var reportPath = ProjectPath + "Reports/screenshots";
+                if (!Directory.Exists(reportPath))
+                { new System.IO.DirectoryInfo(reportPath).Create(); }
+
+                return ProjectPath + "Reports/screenshots/"; 
+            }
+            
         }
     }
 

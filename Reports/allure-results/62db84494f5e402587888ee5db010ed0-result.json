@@ -1,0 +1,206 @@
+{
+  "uuid": "eb197233-4617-4cf3-8861-6dff9dab1753",
+  "historyId": "1752a5463407b7e420120808d99533eb",
+  "testCaseId": "de55e53c03244b55ee262da2457fca0c",
+  "fullName": "PlaySpec1/Features/ParaFeatures/social2/SocialNet2",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "social2"
+    },
+    {
+      "name": "tag",
+      "value": "para2"
+    }
+  ],
+  "links": [],
+  "name": "SocialNet2",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Target page, context or browser has been closed",
+    "trace": "Microsoft.Playwright.TargetClosedException: Target page, context or browser has been closed\r\n   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206\r\n   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532\r\n   at PlaySpec1.StepDefs3.SocialNetSteps1.enterdata1() in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\SocialNetSteps1.cs:line 256\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeDelegateSynchronously(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  user navigates to \"https://www.opensource-socialnetwork.org/demo\"",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "running",
+      "steps": [
+        {
+          "name": "When  navigate to socialnetwork page",
+          "status": "none",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "running",
+          "steps": [
+            {
+              "name": "When  switch to new tab",
+              "status": "none",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "running",
+              "steps": [
+                {
+                  "name": "When  click on 'dob' element and enter birtdate as \"20 Oct. 2000\"",
+                  "status": "none",
+                  "statusDetails": {
+                    "known": false,
+                    "muted": false,
+                    "flaky": false
+                  },
+                  "stage": "running",
+                  "steps": [
+                    {
+                      "name": "Then  verify birthdate should be in dd/mm/yyyy format",
+                      "status": "none",
+                      "statusDetails": {
+                        "known": false,
+                        "muted": false,
+                        "flaky": false
+                      },
+                      "stage": "running",
+                      "steps": [
+                        {
+                          "name": "When  enter new user data",
+                          "status": "broken",
+                          "statusDetails": {
+                            "known": false,
+                            "muted": false,
+                            "flaky": false,
+                            "message": "Target page, context or browser has been closed",
+                            "trace": "Microsoft.Playwright.TargetClosedException: Target page, context or browser has been closed\r\n   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206\r\n   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532\r\n   at PlaySpec1.StepDefs3.SocialNetSteps1.enterdata1() in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\SocialNetSteps1.cs:line 256\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeDelegateSynchronously(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+                          },
+                          "stage": "finished",
+                          "steps": [],
+                          "attachments": [],
+                          "parameters": [],
+                          "start": 1719080190670,
+                          "stop": 1719080191550
+                        },
+                        {
+                          "name": "When  open new tab and navigate to \"https://www.yopmail.com\"",
+                          "status": "skipped",
+                          "statusDetails": {
+                            "known": false,
+                            "muted": false,
+                            "flaky": false
+                          },
+                          "stage": "finished",
+                          "steps": [],
+                          "attachments": [],
+                          "parameters": [],
+                          "start": 1719080191550,
+                          "stop": 1719080191550
+                        },
+                        {
+                          "name": "When  go to newuser yopmail inbox",
+                          "status": "skipped",
+                          "statusDetails": {
+                            "known": false,
+                            "muted": false,
+                            "flaky": false
+                          },
+                          "stage": "finished",
+                          "steps": [],
+                          "attachments": [],
+                          "parameters": [],
+                          "start": 1719080191550,
+                          "stop": 1719080191550
+                        },
+                        {
+                          "name": "And  navigates to social network activation page",
+                          "status": "skipped",
+                          "statusDetails": {
+                            "known": false,
+                            "muted": false,
+                            "flaky": false
+                          },
+                          "stage": "finished",
+                          "steps": [],
+                          "attachments": [],
+                          "parameters": [],
+                          "start": 1719080191550,
+                          "stop": 1719080191550
+                        },
+                        {
+                          "name": "And  login with credentials using username and password",
+                          "status": "skipped",
+                          "statusDetails": {
+                            "known": false,
+                            "muted": false,
+                            "flaky": false
+                          },
+                          "stage": "finished",
+                          "steps": [],
+                          "attachments": [],
+                          "parameters": [],
+                          "start": 1719080191550,
+                          "stop": 1719080191550
+                        }
+                      ],
+                      "attachments": [],
+                      "parameters": [],
+                      "start": 1719080190646,
+                      "stop": 0
+                    }
+                  ],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1719080187252,
+                  "stop": 0
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1719080185209,
+              "stop": 0
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1719080180954,
+          "stop": 0
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080171982,
+      "stop": 0
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719080171965,
+  "stop": 1719080191552
+}

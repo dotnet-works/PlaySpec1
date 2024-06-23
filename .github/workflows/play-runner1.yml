@@ -4,10 +4,7 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
-
+  
 jobs:
   build:
     runs-on: windows-latest
@@ -35,4 +32,4 @@ jobs:
         run: pwsh bin/Debug/net8.0/playwright.ps1 install --with-deps
 
       - name: Run tests
-        run: dotnet test --filter Category=yoptest --logger:"console;verbosity=detailed"
+        run: dotnet test --filter Category=demo --logger:"console;verbosity=detailed"

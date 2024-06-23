@@ -1,0 +1,195 @@
+{
+  "uuid": "77d53d76-6952-494d-967e-2beafb803977",
+  "historyId": "7962f2137c6be6628dd896945cf59452",
+  "testCaseId": "c3f090e04ca427f29567958865751e7a",
+  "fullName": "PlaySpec1/Features/Sample2SocialNet2/Sample2_SocialNetwork2",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "Sample2SocialNet2"
+    }
+  ],
+  "links": [],
+  "name": "Sample2_SocialNetwork2",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Target page, context or browser has been closed\nBrowser logs:\n\n<launching> C:\\Users\\Admin\\AppData\\Local\\ms-playwright\\chromium-1117\\chrome-win\\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --start-maximized --disable-gpu --no-sandbox --user-data-dir=C:\\Users\\Admin\\AppData\\Local\\Temp\\playwright_chromiumdev_profile-XXXXXXBXPLyc --remote-debugging-pipe --no-startup-window\n<launched> pid=9828\n[pid=9828] <gracefully close start>",
+    "trace": "Microsoft.Playwright.TargetClosedException: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> C:\\Users\\Admin\\AppData\\Local\\ms-playwright\\chromium-1117\\chrome-win\\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --start-maximized --disable-gpu --no-sandbox --user-data-dir=C:\\Users\\Admin\\AppData\\Local\\Temp\\playwright_chromiumdev_profile-XXXXXXBXPLyc --remote-debugging-pipe --no-startup-window\n<launched> pid=9828\n[pid=9828] <gracefully close start>\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\r\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\r\n   at Allure.SpecFlowPlugin.SelectiveRun.SelectiveRunTestRunner.CollectScenarioErrors()\r\n   at PlaySpec1.Features.Sample2SocialNet2Feature.ScenarioCleanup()\r\n   at PlaySpec1.Features.Sample2SocialNet2Feature.Sample2_SocialNetwork2() in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\Features\\Sample2SocialNet2.feature:line 13\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  user navigates to \"https://www.opensource-socialnetwork.org/demo\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191736,
+      "stop": 1719080191736
+    },
+    {
+      "name": "When  navigate to socialnetwork page",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191737,
+      "stop": 1719080191737
+    },
+    {
+      "name": "When  switch to new tab",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191737,
+      "stop": 1719080191737
+    },
+    {
+      "name": "When  click on 'dob' element and enter birtdate as \"21 Oct. 2000\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191737,
+      "stop": 1719080191737
+    },
+    {
+      "name": "Then  verify birthdate should be in dd/mm/yyyy format",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191737,
+      "stop": 1719080191737
+    },
+    {
+      "name": "When  enter new user data",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191737,
+      "stop": 1719080191737
+    },
+    {
+      "name": "When  open new tab and navigate to \"https://www.yopmail.com\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191737,
+      "stop": 1719080191737
+    },
+    {
+      "name": "When  go to newuser yopmail inbox",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191737,
+      "stop": 1719080191737
+    },
+    {
+      "name": "And  navigates to social network activation page",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191737,
+      "stop": 1719080191737
+    },
+    {
+      "name": "And  login with credentials using username and password",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191737,
+      "stop": 1719080191737
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719080191732,
+  "stop": 1719080191739
+}

@@ -1,0 +1,165 @@
+{
+  "uuid": "d1c1f2a0-7311-426f-bb32-66645833b5e4",
+  "historyId": "051c064b8ff73c241d6ec975cfb8975a",
+  "testCaseId": "ed32624a52624673b71a7424039b7254",
+  "fullName": "PlaySpec1/Features/SocialNet1 Tests/Sample1_SocialNetwork1",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "SocialNet1 Tests"
+    }
+  ],
+  "links": [],
+  "name": "Sample1_SocialNetwork1",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Target page, context or browser has been closed",
+    "trace": "Microsoft.Playwright.TargetClosedException: Target page, context or browser has been closed\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\r\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\r\n   at Allure.SpecFlowPlugin.SelectiveRun.SelectiveRunTestRunner.CollectScenarioErrors()\r\n   at PlaySpec1.Features.SocialNet1TestsFeature.ScenarioCleanup()\r\n   at PlaySpec1.Features.SocialNet1TestsFeature.Sample1_SocialNetwork1() in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\Features\\Sample1SocialNet1.feature:line 14\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  user navigates to \"https://www.opensource-socialnetwork.org/demo\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191813,
+      "stop": 1719080191813
+    },
+    {
+      "name": "When  navigate to socialnetwork page",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191813,
+      "stop": 1719080191813
+    },
+    {
+      "name": "When  switch to new tab",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191813,
+      "stop": 1719080191813
+    },
+    {
+      "name": "When  click on 'dob' element and enter birtdate as \"20 Oct. 2000\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191813,
+      "stop": 1719080191813
+    },
+    {
+      "name": "Then  verify birthdate should be in dd/mm/yyyy format",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191813,
+      "stop": 1719080191813
+    },
+    {
+      "name": "When  enter new user data",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191813,
+      "stop": 1719080191813
+    },
+    {
+      "name": "When  open new tab and navigate to \"https://www.yopmail.com\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191813,
+      "stop": 1719080191813
+    },
+    {
+      "name": "When  verify email confirmation",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191813,
+      "stop": 1719080191813
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719080191813,
+  "stop": 1719080191814
+}

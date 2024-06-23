@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+
+	<RunConfiguration>
+	  <EnvironmentVariables>
+		 <BROWSERTYPE>Chrome</BROWSERTYPE>
+		 <ENV1>PipeLine</ENV1>
+		 <ENV2>Other</ENV2>
+	  </EnvironmentVariables>
+	</RunConfiguration>
+	
+
+	<TestRunParameters>
+		<Parameter name="param1" value="someExampleValue" />
+	</TestRunParameters>
+
+	<TestCaseFilter>(Category=para2)</TestCaseFilter>
+
+	
+	<SpecFlow>
+		<!-- Enable or disable parallel test execution for SpecFlow -->
+		<ParallelExecution>
+			<TestThreadCount>2</TestThreadCount>
+			<IgnoreTag>ignore</IgnoreTag>
+			<SyncTestExecution>false</SyncTestExecution>
+		</ParallelExecution>
+	</SpecFlow>
+</RunSettings>

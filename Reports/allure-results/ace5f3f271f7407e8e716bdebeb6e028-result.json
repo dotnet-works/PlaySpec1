@@ -1,0 +1,105 @@
+{
+  "uuid": "554a4319-4605-461d-806f-22bc5c0da2ab",
+  "historyId": "20f6ccdf12e38f398052e3ce04605d4c",
+  "testCaseId": "d7f141abf12170a69ba86ff4eeb45f8f",
+  "fullName": "PlaySpec1/Features/SocialNet1 Tests/VerifyDOB_SocialNetwork2",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "SocialNet1 Tests"
+    }
+  ],
+  "links": [],
+  "name": "VerifyDOB_SocialNetwork2",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Target page, context or browser has been closed",
+    "trace": "Microsoft.Playwright.TargetClosedException: Target page, context or browser has been closed\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\r\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\r\n   at Allure.SpecFlowPlugin.SelectiveRun.SelectiveRunTestRunner.CollectScenarioErrors()\r\n   at PlaySpec1.Features.SocialNet1TestsFeature.ScenarioCleanup()\r\n   at PlaySpec1.Features.SocialNet1TestsFeature.VerifyDOB_SocialNetwork2() in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\Features\\Sample1SocialNet1.feature:line 26\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  user navigates to \"https://www.opensource-socialnetwork.org/demo\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191848,
+      "stop": 1719080191848
+    },
+    {
+      "name": "When  navigate to socialnetwork page",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191848,
+      "stop": 1719080191848
+    },
+    {
+      "name": "When  switch to new tab",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191848,
+      "stop": 1719080191848
+    },
+    {
+      "name": "When  click on 'dob' element and enter birtdate as \"01 Jan. 2011\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191848,
+      "stop": 1719080191848
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719080191847,
+  "stop": 1719080191848
+}

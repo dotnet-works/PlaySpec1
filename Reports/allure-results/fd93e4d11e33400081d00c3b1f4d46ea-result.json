@@ -1,0 +1,128 @@
+{
+  "uuid": "7d1f158f-35b0-41be-a652-46f1eba83d64",
+  "historyId": "4e6df7a1fa232f797fe2aaf09aa7e11b",
+  "testCaseId": "7d6e0e998ad94cefe59cfca2161c70b3",
+  "fullName": "PlaySpec1/Features/PlayActions/PlayActionTest1/Test execute Javascript Actions2",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "PlayActionTest1"
+    },
+    {
+      "name": "tag",
+      "value": "tag1"
+    }
+  ],
+  "links": [],
+  "name": "Test execute Javascript Actions2",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TypeError: Cannot read properties of null (reading 'click')\n    at eval (eval at evaluate (:226:30), <anonymous>:1:131)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:226:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+    "trace": "Microsoft.Playwright.PlaywrightException: TypeError: Cannot read properties of null (reading 'click')\n    at eval (eval at evaluate (:226:30), <anonymous>:1:131)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:226:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\r\n   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206\r\n   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532\r\n   at Microsoft.Playwright.Core.Frame.EvaluateAsync(String script, Object arg) in /_/src/Playwright/Core/Frame.cs:line 688\r\n   at PlaySpec1.StepDef.PlayActionDemoSteps.clickUsingJs(Int32 delay) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\PlayActionDemoSteps.cs:line 127\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeDelegateSynchronously(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  user navigates to \"https://testautomationpractice.blogspot.com/\"",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "running",
+      "steps": [
+        {
+          "name": "When  wait for 5 secs",
+          "status": "none",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "running",
+          "steps": [
+            {
+              "name": "When  click link using javascript with 10 secs delay",
+              "status": "broken",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false,
+                "message": "TypeError: Cannot read properties of null (reading 'click')\n    at eval (eval at evaluate (:226:30), <anonymous>:1:131)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:226:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+                "trace": "Microsoft.Playwright.PlaywrightException: TypeError: Cannot read properties of null (reading 'click')\n    at eval (eval at evaluate (:226:30), <anonymous>:1:131)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:226:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\r\n   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206\r\n   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532\r\n   at Microsoft.Playwright.Core.Frame.EvaluateAsync(String script, Object arg) in /_/src/Playwright/Core/Frame.cs:line 688\r\n   at PlaySpec1.StepDef.PlayActionDemoSteps.clickUsingJs(Int32 delay) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\PlayActionDemoSteps.cs:line 127\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeDelegateSynchronously(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1719079640033,
+              "stop": 1719079640078
+            },
+            {
+              "name": "When  highlight and click element",
+              "status": "skipped",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1719079640078,
+              "stop": 1719079640079
+            },
+            {
+              "name": "When  wait for 2 secs",
+              "status": "skipped",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1719079640079,
+              "stop": 1719079640079
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1719079634224,
+          "stop": 0
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719079622733,
+      "stop": 0
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719079622733,
+  "stop": 1719079640080
+}

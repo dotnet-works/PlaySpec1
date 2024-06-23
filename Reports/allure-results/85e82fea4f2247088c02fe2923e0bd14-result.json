@@ -1,0 +1,319 @@
+{
+  "uuid": "c1a36b85-3f40-4ffb-a7a3-1b799ff558ea",
+  "historyId": "8b28b42251c830d1cd9af9d13f5279bb",
+  "testCaseId": "d13561403a9d63c8f8d337c1d5a3ac79",
+  "fullName": "PlaySpec1/Features/PlayActions/PlayActionTest1/Test Playwright Actions1",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "PlayActionTest1"
+    },
+    {
+      "name": "tag",
+      "value": "tag1"
+    }
+  ],
+  "links": [],
+  "name": "Test Playwright Actions1",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Target page, context or browser has been closed",
+    "trace": "Microsoft.Playwright.TargetClosedException: Target page, context or browser has been closed\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\r\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\r\n   at Allure.SpecFlowPlugin.SelectiveRun.SelectiveRunTestRunner.CollectScenarioErrors()\r\n   at PlaySpec1.Features.PlayActions.PlayActionTest1Feature.ScenarioCleanup()\r\n   at PlaySpec1.Features.PlayActions.PlayActionTest1Feature.TestPlaywrightActions1() in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\Features\\PlayActions\\PlayActions1.feature:line 23\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  user navigates to \"https://testautomationpractice.blogspot.com/\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191787,
+      "stop": 1719080191787
+    },
+    {
+      "name": "When  Enter data in \"Name:\" label Textbox using \"Fill\" method",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191787,
+      "stop": 1719080191787
+    },
+    {
+      "name": "And  Enter data in \"Name:\" label Textbox using \"Type\" method",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191787,
+      "stop": 1719080191787
+    },
+    {
+      "name": "And  press key combo ctrl and A",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191787,
+      "stop": 1719080191787
+    },
+    {
+      "name": "And  Scroll To element",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191787,
+      "stop": 1719080191788
+    },
+    {
+      "name": "When  perform drag and drop operation",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191788,
+      "stop": 1719080191788
+    },
+    {
+      "name": "When  Get element diamension",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191788,
+      "stop": 1719080191788
+    },
+    {
+      "name": "When  scroll mouse forward 300 pixel verticalliy",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191788,
+      "stop": 1719080191788
+    },
+    {
+      "name": "When  select multi elements in selectbox using option",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191788,
+      "stop": 1719080191788
+    },
+    {
+      "name": "When  wait for 2 secs",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191788,
+      "stop": 1719080191788
+    },
+    {
+      "name": "When  refresh the page",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191788,
+      "stop": 1719080191788
+    },
+    {
+      "name": "When  wait for 5 secs",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191788,
+      "stop": 1719080191788
+    },
+    {
+      "name": "When  select single elements in selectbox using text value",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191788,
+      "stop": 1719080191788
+    },
+    {
+      "name": "When  wait for 2 secs",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191788,
+      "stop": 1719080191788
+    },
+    {
+      "name": "When  refresh the page",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191788,
+      "stop": 1719080191788
+    },
+    {
+      "name": "When  wait for 5 secs",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191788,
+      "stop": 1719080191788
+    },
+    {
+      "name": "When  click link using javascript with 0 secs delay",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191788,
+      "stop": 1719080191788
+    },
+    {
+      "name": "When  wait for 2 secs",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191788,
+      "stop": 1719080191788
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719080191787,
+  "stop": 1719080191789
+}

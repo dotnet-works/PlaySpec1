@@ -1,0 +1,130 @@
+{
+  "uuid": "425fc287-0b3e-40e9-b3d0-cd075f7504d2",
+  "historyId": "d209c14299aa624f7a6bc5cd584b8ed9",
+  "testCaseId": "934f920981550177a410aaf2c9aa9f2f",
+  "fullName": "PlaySpec1/Features/PlayActions/PlayActionTest1/Test Handle Dialog Actions3",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "PlayActionTest1"
+    },
+    {
+      "name": "tag",
+      "value": "tag3"
+    }
+  ],
+  "links": [],
+  "name": "Test Handle Dialog Actions3",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Timeout 30000ms exceeded.\nCall log:\n  - waiting for Locator(\"//button[contains(text(),'Confirm Box')]\")\n  -   locator resolved to <button onclick=\"myFunctionConfirm()\">Confirm Box</button>\n  - attempting click action\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   performing click action",
+    "trace": "System.TimeoutException: Timeout 30000ms exceeded.\nCall log:\n  - waiting for Locator(\"//button[contains(text(),'Confirm Box')]\")\n  -   locator resolved to <button onclick=\"myFunctionConfirm()\">Confirm Box</button>\n  - attempting click action\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   performing click action\r\n   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206\r\n   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532\r\n   at PlaySpec1.StepDef.PlayActionDemoSteps.DialogAlertButton(String alertbuttonName) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\PlayActionDemoSteps.cs:line 204\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "description": "Playwright can interact with the web page dialogs \r\nsuch as alert, confirm, prompt as well as beforeunload confirmation.",
+  "steps": [
+    {
+      "name": "Given  user navigates to \"https://testautomationpractice.blogspot.com/\"",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "running",
+      "steps": [
+        {
+          "name": "When  wait for 2 secs",
+          "status": "none",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "running",
+          "steps": [
+            {
+              "name": "When  click alert button",
+              "status": "none",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "running",
+              "steps": [
+                {
+                  "name": "When  click on \"Confirm box\" button",
+                  "status": "broken",
+                  "statusDetails": {
+                    "known": false,
+                    "muted": false,
+                    "flaky": false,
+                    "message": "Timeout 30000ms exceeded.\nCall log:\n  - waiting for Locator(\"//button[contains(text(),'Confirm Box')]\")\n  -   locator resolved to <button onclick=\"myFunctionConfirm()\">Confirm Box</button>\n  - attempting click action\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   performing click action",
+                    "trace": "System.TimeoutException: Timeout 30000ms exceeded.\nCall log:\n  - waiting for Locator(\"//button[contains(text(),'Confirm Box')]\")\n  -   locator resolved to <button onclick=\"myFunctionConfirm()\">Confirm Box</button>\n  - attempting click action\n  -   waiting for element to be visible, enabled and stable\n  -   element is visible, enabled and stable\n  -   scrolling into view if needed\n  -   done scrolling\n  -   performing click action\r\n   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206\r\n   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532\r\n   at PlaySpec1.StepDef.PlayActionDemoSteps.DialogAlertButton(String alertbuttonName) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\PlayActionDemoSteps.cs:line 204\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+                  },
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1719080456752,
+                  "stop": 1719080487030
+                },
+                {
+                  "name": "When  wait for 1 secs",
+                  "status": "skipped",
+                  "statusDetails": {
+                    "known": false,
+                    "muted": false,
+                    "flaky": false
+                  },
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1719080487030,
+                  "stop": 1719080487030
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1719080456749,
+              "stop": 0
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1719080454704,
+          "stop": 0
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080442309,
+      "stop": 0
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719080442309,
+  "stop": 1719080487032
+}

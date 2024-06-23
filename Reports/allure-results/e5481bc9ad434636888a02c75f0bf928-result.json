@@ -1,0 +1,96 @@
+{
+  "uuid": "1e855061-01a4-4563-8c4a-ddab6f24c489",
+  "historyId": "33c45966e5448f595a47cdd1e68aa365",
+  "testCaseId": "e0735d622df0532fd214e8024e6acea5",
+  "fullName": "PlaySpec1/Features/ParaFeatures/YopMailTest1/VerifyYopInbox1",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "YopMailTest1"
+    },
+    {
+      "name": "tag",
+      "value": "yoptest"
+    }
+  ],
+  "links": [],
+  "name": "VerifyYopInbox1",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "net::ERR_ABORTED at https://yopmail.com/\nCall log:\n  - navigating to \"https://yopmail.com/\", waiting until \"load\"",
+    "trace": "Microsoft.Playwright.PlaywrightException: net::ERR_ABORTED at https://yopmail.com/\nCall log:\n  - navigating to \"https://yopmail.com/\", waiting until \"load\"\r\n   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206\r\n   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532\r\n   at Microsoft.Playwright.Core.Frame.GotoAsync(String url, FrameGotoOptions options) in /_/src/Playwright/Core/Frame.cs:line 791\r\n   at PlaySpec1.StepDefs3.SocialNetSteps1.navStep1(String url) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\SocialNetSteps1.cs:line 43\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeDelegateSynchronously(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  user navigates to \"https://yopmail.com\"",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "net::ERR_ABORTED at https://yopmail.com/\nCall log:\n  - navigating to \"https://yopmail.com/\", waiting until \"load\"",
+        "trace": "Microsoft.Playwright.PlaywrightException: net::ERR_ABORTED at https://yopmail.com/\nCall log:\n  - navigating to \"https://yopmail.com/\", waiting until \"load\"\r\n   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206\r\n   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532\r\n   at Microsoft.Playwright.Core.Frame.GotoAsync(String url, FrameGotoOptions options) in /_/src/Playwright/Core/Frame.cs:line 791\r\n   at PlaySpec1.StepDefs3.SocialNetSteps1.navStep1(String url) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\SocialNetSteps1.cs:line 43\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeDelegateSynchronously(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719079622072,
+      "stop": 1719079622272
+    },
+    {
+      "name": "When  go to zulu1122 yopmail inbox",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719079622275,
+      "stop": 1719079622276
+    },
+    {
+      "name": "And  navigates to social network activation page",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719079622279,
+      "stop": 1719079622279
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719079622051,
+  "stop": 1719079622317
+}

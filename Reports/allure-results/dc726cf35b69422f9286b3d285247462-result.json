@@ -1,0 +1,337 @@
+{
+  "uuid": "a9a0e525-f1e0-43f0-9dfb-773babcc228a",
+  "historyId": "8b28b42251c830d1cd9af9d13f5279bb",
+  "testCaseId": "d13561403a9d63c8f8d337c1d5a3ac79",
+  "fullName": "PlaySpec1/Features/PlayActions/PlayActionTest1/Test Playwright Actions1",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "PlayActionTest1"
+    },
+    {
+      "name": "tag",
+      "value": "tag1"
+    }
+  ],
+  "links": [],
+  "name": "Test Playwright Actions1",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TypeError: Cannot set properties of null (setting 'value')\n    at eval (eval at evaluate (:226:30), <anonymous>:1:128)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:226:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+    "trace": "Microsoft.Playwright.PlaywrightException: TypeError: Cannot set properties of null (setting 'value')\n    at eval (eval at evaluate (:226:30), <anonymous>:1:128)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:226:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\r\n   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206\r\n   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532\r\n   at Microsoft.Playwright.Core.Frame.EvaluateAsync(String script, Object arg) in /_/src/Playwright/Core/Frame.cs:line 688\r\n   at PlaySpec1.StepDef.PlayActionDemoSteps.clickUsingJs(Int32 delay) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\PlayActionDemoSteps.cs:line 131\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  user navigates to \"https://testautomationpractice.blogspot.com/\"",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "running",
+      "steps": [
+        {
+          "name": "When  Enter data in \"Name:\" label Textbox using \"Fill\" method",
+          "status": "none",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "running",
+          "steps": [
+            {
+              "name": "And  Enter data in \"Name:\" label Textbox using \"Type\" method",
+              "status": "none",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "running",
+              "steps": [
+                {
+                  "name": "And  press key combo ctrl and A",
+                  "status": "none",
+                  "statusDetails": {
+                    "known": false,
+                    "muted": false,
+                    "flaky": false
+                  },
+                  "stage": "running",
+                  "steps": [
+                    {
+                      "name": "And  Scroll To element",
+                      "status": "none",
+                      "statusDetails": {
+                        "known": false,
+                        "muted": false,
+                        "flaky": false
+                      },
+                      "stage": "running",
+                      "steps": [
+                        {
+                          "name": "When  perform drag and drop operation",
+                          "status": "none",
+                          "statusDetails": {
+                            "known": false,
+                            "muted": false,
+                            "flaky": false
+                          },
+                          "stage": "running",
+                          "steps": [
+                            {
+                              "name": "When  Get element diamension",
+                              "status": "none",
+                              "statusDetails": {
+                                "known": false,
+                                "muted": false,
+                                "flaky": false
+                              },
+                              "stage": "running",
+                              "steps": [
+                                {
+                                  "name": "When  scroll mouse forward 300 pixel verticalliy",
+                                  "status": "none",
+                                  "statusDetails": {
+                                    "known": false,
+                                    "muted": false,
+                                    "flaky": false
+                                  },
+                                  "stage": "running",
+                                  "steps": [
+                                    {
+                                      "name": "When  select multi elements in selectbox using option",
+                                      "status": "none",
+                                      "statusDetails": {
+                                        "known": false,
+                                        "muted": false,
+                                        "flaky": false
+                                      },
+                                      "stage": "running",
+                                      "steps": [
+                                        {
+                                          "name": "When  wait for 2 secs",
+                                          "status": "none",
+                                          "statusDetails": {
+                                            "known": false,
+                                            "muted": false,
+                                            "flaky": false
+                                          },
+                                          "stage": "running",
+                                          "steps": [
+                                            {
+                                              "name": "When  refresh the page",
+                                              "status": "none",
+                                              "statusDetails": {
+                                                "known": false,
+                                                "muted": false,
+                                                "flaky": false
+                                              },
+                                              "stage": "running",
+                                              "steps": [
+                                                {
+                                                  "name": "When  wait for 5 secs",
+                                                  "status": "none",
+                                                  "statusDetails": {
+                                                    "known": false,
+                                                    "muted": false,
+                                                    "flaky": false
+                                                  },
+                                                  "stage": "running",
+                                                  "steps": [
+                                                    {
+                                                      "name": "When  select single elements in selectbox using text value",
+                                                      "status": "none",
+                                                      "statusDetails": {
+                                                        "known": false,
+                                                        "muted": false,
+                                                        "flaky": false
+                                                      },
+                                                      "stage": "running",
+                                                      "steps": [
+                                                        {
+                                                          "name": "When  wait for 2 secs",
+                                                          "status": "none",
+                                                          "statusDetails": {
+                                                            "known": false,
+                                                            "muted": false,
+                                                            "flaky": false
+                                                          },
+                                                          "stage": "running",
+                                                          "steps": [
+                                                            {
+                                                              "name": "When  refresh the page",
+                                                              "status": "none",
+                                                              "statusDetails": {
+                                                                "known": false,
+                                                                "muted": false,
+                                                                "flaky": false
+                                                              },
+                                                              "stage": "running",
+                                                              "steps": [
+                                                                {
+                                                                  "name": "When  wait for 5 secs",
+                                                                  "status": "none",
+                                                                  "statusDetails": {
+                                                                    "known": false,
+                                                                    "muted": false,
+                                                                    "flaky": false
+                                                                  },
+                                                                  "stage": "running",
+                                                                  "steps": [
+                                                                    {
+                                                                      "name": "When  click link using javascript with 0 secs delay",
+                                                                      "status": "broken",
+                                                                      "statusDetails": {
+                                                                        "known": false,
+                                                                        "muted": false,
+                                                                        "flaky": false,
+                                                                        "message": "TypeError: Cannot set properties of null (setting 'value')\n    at eval (eval at evaluate (:226:30), <anonymous>:1:128)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:226:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+                                                                        "trace": "Microsoft.Playwright.PlaywrightException: TypeError: Cannot set properties of null (setting 'value')\n    at eval (eval at evaluate (:226:30), <anonymous>:1:128)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:226:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\r\n   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206\r\n   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532\r\n   at Microsoft.Playwright.Core.Frame.EvaluateAsync(String script, Object arg) in /_/src/Playwright/Core/Frame.cs:line 688\r\n   at PlaySpec1.StepDef.PlayActionDemoSteps.clickUsingJs(Int32 delay) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\PlayActionDemoSteps.cs:line 131\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+                                                                      },
+                                                                      "stage": "finished",
+                                                                      "steps": [],
+                                                                      "attachments": [],
+                                                                      "parameters": [],
+                                                                      "start": 1719079738033,
+                                                                      "stop": 1719079756123
+                                                                    },
+                                                                    {
+                                                                      "name": "When  wait for 2 secs",
+                                                                      "status": "skipped",
+                                                                      "statusDetails": {
+                                                                        "known": false,
+                                                                        "muted": false,
+                                                                        "flaky": false
+                                                                      },
+                                                                      "stage": "finished",
+                                                                      "steps": [],
+                                                                      "attachments": [],
+                                                                      "parameters": [],
+                                                                      "start": 1719079756124,
+                                                                      "stop": 1719079756124
+                                                                    }
+                                                                  ],
+                                                                  "attachments": [],
+                                                                  "parameters": [],
+                                                                  "start": 1719079733029,
+                                                                  "stop": 0
+                                                                }
+                                                              ],
+                                                              "attachments": [],
+                                                              "parameters": [],
+                                                              "start": 1719079728080,
+                                                              "stop": 0
+                                                            }
+                                                          ],
+                                                          "attachments": [],
+                                                          "parameters": [],
+                                                          "start": 1719079726073,
+                                                          "stop": 0
+                                                        }
+                                                      ],
+                                                      "attachments": [],
+                                                      "parameters": [],
+                                                      "start": 1719079725935,
+                                                      "stop": 0
+                                                    }
+                                                  ],
+                                                  "attachments": [],
+                                                  "parameters": [],
+                                                  "start": 1719079720930,
+                                                  "stop": 0
+                                                }
+                                              ],
+                                              "attachments": [],
+                                              "parameters": [],
+                                              "start": 1719079714480,
+                                              "stop": 0
+                                            }
+                                          ],
+                                          "attachments": [],
+                                          "parameters": [],
+                                          "start": 1719079712472,
+                                          "stop": 0
+                                        }
+                                      ],
+                                      "attachments": [],
+                                      "parameters": [],
+                                      "start": 1719079712355,
+                                      "stop": 0
+                                    }
+                                  ],
+                                  "attachments": [],
+                                  "parameters": [],
+                                  "start": 1719079710237,
+                                  "stop": 0
+                                }
+                              ],
+                              "attachments": [],
+                              "parameters": [],
+                              "start": 1719079710192,
+                              "stop": 0
+                            }
+                          ],
+                          "attachments": [],
+                          "parameters": [],
+                          "start": 1719079704940,
+                          "stop": 0
+                        }
+                      ],
+                      "attachments": [],
+                      "parameters": [],
+                      "start": 1719079702748,
+                      "stop": 0
+                    }
+                  ],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1719079700385,
+                  "stop": 0
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1719079699375,
+              "stop": 0
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1719079698120,
+          "stop": 0
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719079686352,
+      "stop": 0
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719079686352,
+  "stop": 1719079756125
+}

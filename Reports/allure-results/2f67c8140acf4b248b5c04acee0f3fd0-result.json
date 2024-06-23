@@ -1,0 +1,206 @@
+{
+  "uuid": "3276418f-d0ff-4982-b764-a9b4f0670242",
+  "historyId": "1752a5463407b7e420120808d99533eb",
+  "testCaseId": "de55e53c03244b55ee262da2457fca0c",
+  "fullName": "PlaySpec1/Features/ParaFeatures/social2/SocialNet2",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "social2"
+    },
+    {
+      "name": "tag",
+      "value": "para2"
+    }
+  ],
+  "links": [],
+  "name": "SocialNet2",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  user navigates to \"https://www.opensource-socialnetwork.org/demo\"",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "running",
+      "steps": [
+        {
+          "name": "When  navigate to socialnetwork page",
+          "status": "none",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "running",
+          "steps": [
+            {
+              "name": "When  switch to new tab",
+              "status": "none",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "running",
+              "steps": [
+                {
+                  "name": "When  click on 'dob' element and enter birtdate as \"20 Oct. 2000\"",
+                  "status": "none",
+                  "statusDetails": {
+                    "known": false,
+                    "muted": false,
+                    "flaky": false
+                  },
+                  "stage": "running",
+                  "steps": [
+                    {
+                      "name": "Then  verify birthdate should be in dd/mm/yyyy format",
+                      "status": "none",
+                      "statusDetails": {
+                        "known": false,
+                        "muted": false,
+                        "flaky": false
+                      },
+                      "stage": "running",
+                      "steps": [
+                        {
+                          "name": "When  enter new user data",
+                          "status": "none",
+                          "statusDetails": {
+                            "known": false,
+                            "muted": false,
+                            "flaky": false
+                          },
+                          "stage": "running",
+                          "steps": [
+                            {
+                              "name": "When  open new tab and navigate to \"https://www.yopmail.com\"",
+                              "status": "none",
+                              "statusDetails": {
+                                "known": false,
+                                "muted": false,
+                                "flaky": false
+                              },
+                              "stage": "running",
+                              "steps": [
+                                {
+                                  "name": "When  go to newuser yopmail inbox",
+                                  "status": "none",
+                                  "statusDetails": {
+                                    "known": false,
+                                    "muted": false,
+                                    "flaky": false
+                                  },
+                                  "stage": "running",
+                                  "steps": [
+                                    {
+                                      "name": "And  navigates to social network activation page",
+                                      "status": "none",
+                                      "statusDetails": {
+                                        "known": false,
+                                        "muted": false,
+                                        "flaky": false
+                                      },
+                                      "stage": "running",
+                                      "steps": [
+                                        {
+                                          "name": "And  login with credentials using username and password",
+                                          "status": "none",
+                                          "statusDetails": {
+                                            "known": false,
+                                            "muted": false,
+                                            "flaky": false
+                                          },
+                                          "stage": "running",
+                                          "steps": [],
+                                          "attachments": [],
+                                          "parameters": [],
+                                          "start": 1719078905512,
+                                          "stop": 0
+                                        }
+                                      ],
+                                      "attachments": [],
+                                      "parameters": [],
+                                      "start": 1719078901560,
+                                      "stop": 0
+                                    }
+                                  ],
+                                  "attachments": [],
+                                  "parameters": [],
+                                  "start": 1719078898474,
+                                  "stop": 0
+                                }
+                              ],
+                              "attachments": [],
+                              "parameters": [],
+                              "start": 1719078891572,
+                              "stop": 0
+                            }
+                          ],
+                          "attachments": [],
+                          "parameters": [],
+                          "start": 1719078874904,
+                          "stop": 0
+                        }
+                      ],
+                      "attachments": [],
+                      "parameters": [],
+                      "start": 1719078874850,
+                      "stop": 0
+                    }
+                  ],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1719078871249,
+                  "stop": 0
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1719078869108,
+              "stop": 0
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1719078864796,
+          "stop": 0
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719078858762,
+      "stop": 0
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719078858762,
+  "stop": 1719078917639
+}

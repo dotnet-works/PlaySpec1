@@ -1,0 +1,110 @@
+{
+  "uuid": "e47b82fa-e8e7-4329-b57e-73d124ec97bf",
+  "historyId": "20f6ccdf12e38f398052e3ce04605d4c",
+  "testCaseId": "d7f141abf12170a69ba86ff4eeb45f8f",
+  "fullName": "PlaySpec1/Features/SocialNet1 Tests/VerifyDOB_SocialNetwork2",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "SocialNet1 Tests"
+    }
+  ],
+  "links": [],
+  "name": "VerifyDOB_SocialNetwork2",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Timeout 30000ms exceeded.\nCall log:\n  - waiting for Locator(\"//td/a[@data-date='01']\")",
+    "trace": "System.TimeoutException: Timeout 30000ms exceeded.\nCall log:\n  - waiting for Locator(\"//td/a[@data-date='01']\")\r\n   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206\r\n   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532\r\n   at PlaySpec1.StepDefs3.SocialNetSteps1.SetUserDob(String _day, String _month, String _year) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\SocialNetSteps1.cs:line 170\r\n   at PlaySpec1.StepDefs3.SocialNetSteps1.stepDob(String birthDate) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\SocialNetSteps1.cs:line 127\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  user navigates to \"https://www.opensource-socialnetwork.org/demo\"",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "running",
+      "steps": [
+        {
+          "name": "When  navigate to socialnetwork page",
+          "status": "none",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "running",
+          "steps": [
+            {
+              "name": "When  switch to new tab",
+              "status": "none",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "running",
+              "steps": [
+                {
+                  "name": "When  click on 'dob' element and enter birtdate as \"01 Jan. 2011\"",
+                  "status": "broken",
+                  "statusDetails": {
+                    "known": false,
+                    "muted": false,
+                    "flaky": false,
+                    "message": "Timeout 30000ms exceeded.\nCall log:\n  - waiting for Locator(\"//td/a[@data-date='01']\")",
+                    "trace": "System.TimeoutException: Timeout 30000ms exceeded.\nCall log:\n  - waiting for Locator(\"//td/a[@data-date='01']\")\r\n   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206\r\n   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532\r\n   at PlaySpec1.StepDefs3.SocialNetSteps1.SetUserDob(String _day, String _month, String _year) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\SocialNetSteps1.cs:line 170\r\n   at PlaySpec1.StepDefs3.SocialNetSteps1.stepDob(String birthDate) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\SocialNetSteps1.cs:line 127\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+                  },
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1719080496948,
+                  "stop": 1719080530023
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1719080491875,
+              "stop": 0
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1719080486735,
+          "stop": 0
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080479086,
+      "stop": 0
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719080479086,
+  "stop": 1719080530024
+}

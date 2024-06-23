@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+	<RunConfiguration>
+		<EnvironmentVariables>
+			<BROWSERTYPE>Chrome</BROWSERTYPE>
+			<PIPERUN>True</PIPERUN>
+			<ENV2></ENV2>
+		</EnvironmentVariables>
+	</RunConfiguration>
+	
+	<NUnit>
+    <!-- Number of workers (threads) to use in the test run -->
+    <NumberOfTestWorkers>4</NumberOfTestWorkers>
+
+    <!-- Enable or disable shadow copying of assemblies -->
+    <ShadowCopy>true</ShadowCopy>
+
+    <!-- Enable or disable parallel test execution -->
+    <ParallelizeAssemblies>false</ParallelizeAssemblies>
+    <ParallelizeFixtures>true</ParallelizeFixtures>
+  </NUnit>
+
+
+	<TestRunParameters>
+		<Parameter name="param1" value="someExampleValue" />
+	</TestRunParameters>
+	
+	<TestCaseFilter>(Category=para2)</TestCaseFilter>
+    
+	<SpecFlow>
+      <!-- Enable or disable parallel test execution for SpecFlow -->
+      <ParallelExecution>
+         <TestThreadCount>2</TestThreadCount>
+         <SyncTestExecution>false</SyncTestExecution>
+         </ParallelExecution>
+    </SpecFlow>
+
+</RunSettings>

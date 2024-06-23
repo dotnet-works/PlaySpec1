@@ -1,0 +1,106 @@
+{
+  "uuid": "1e33276b-01e3-45bc-99c6-ccfc8c75ced1",
+  "historyId": "6862b079f2281c0b4b5f0f585aef7b72",
+  "testCaseId": "2676b286d42254199b1941187c134985",
+  "fullName": "PlaySpec1/Features/SocialNet1 Tests/ParseDateTime1",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "SocialNet1 Tests"
+    }
+  ],
+  "links": [],
+  "name": "ParseDateTime1",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "When  formattype1 yyyy-MM-dd \"2000-04-27\" string",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "running",
+      "steps": [
+        {
+          "name": "When  formattype2 dd-MM-yyyy \"27-04-2000\" string2",
+          "status": "none",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "running",
+          "steps": [
+            {
+              "name": "When  formattype3",
+              "status": "none",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "running",
+              "steps": [
+                {
+                  "name": "When  formattype4 \"20 October 2000\"",
+                  "status": "none",
+                  "statusDetails": {
+                    "known": false,
+                    "muted": false,
+                    "flaky": false
+                  },
+                  "stage": "running",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1719079622673,
+                  "stop": 0
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1719079622672,
+              "stop": 0
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1719079622670,
+          "stop": 0
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719079622641,
+      "stop": 0
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719079622641,
+  "stop": 1719079622680
+}

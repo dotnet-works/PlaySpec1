@@ -1,0 +1,186 @@
+{
+  "uuid": "f905f6aa-6a42-45a0-baba-92b737240bee",
+  "historyId": "a887b547dcac63ca2d01f9bf850f79f0",
+  "testCaseId": "2918de388e79e01e35e1b825403bdd43",
+  "fullName": "PlaySpec1/Features/SocialNet1 Tests/ParseDateTime2",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "SocialNet1 Tests"
+    }
+  ],
+  "links": [],
+  "name": "ParseDateTime2",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "When  dateformat input1 is \"20 Jan. 2000\"",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "running",
+      "steps": [
+        {
+          "name": "When  dateformat input1 is \"20 March 2000\"",
+          "status": "none",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "running",
+          "steps": [
+            {
+              "name": "When  dateformat input1 is \"1 March 2000\"",
+              "status": "none",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "running",
+              "steps": [
+                {
+                  "name": "When  dateformat input2 is \"4 March 2000\"",
+                  "status": "none",
+                  "statusDetails": {
+                    "known": false,
+                    "muted": false,
+                    "flaky": false
+                  },
+                  "stage": "running",
+                  "steps": [
+                    {
+                      "name": "When  dateformat input2 is \"4 Dec. 2000\"",
+                      "status": "none",
+                      "statusDetails": {
+                        "known": false,
+                        "muted": false,
+                        "flaky": false
+                      },
+                      "stage": "running",
+                      "steps": [
+                        {
+                          "name": "When  dateformat input2 is \"4 December 2000\"",
+                          "status": "none",
+                          "statusDetails": {
+                            "known": false,
+                            "muted": false,
+                            "flaky": false
+                          },
+                          "stage": "running",
+                          "steps": [
+                            {
+                              "name": "When  dateformat input2 is \"01 Jan. 2005\"",
+                              "status": "none",
+                              "statusDetails": {
+                                "known": false,
+                                "muted": false,
+                                "flaky": false
+                              },
+                              "stage": "running",
+                              "steps": [
+                                {
+                                  "name": "When  dateformat input2 is \"01 January 2003\"",
+                                  "status": "none",
+                                  "statusDetails": {
+                                    "known": false,
+                                    "muted": false,
+                                    "flaky": false
+                                  },
+                                  "stage": "running",
+                                  "steps": [
+                                    {
+                                      "name": "When  dateformat input2 is \"01 Jan 2011\"",
+                                      "status": "none",
+                                      "statusDetails": {
+                                        "known": false,
+                                        "muted": false,
+                                        "flaky": false
+                                      },
+                                      "stage": "running",
+                                      "steps": [],
+                                      "attachments": [],
+                                      "parameters": [],
+                                      "start": 1719080434585,
+                                      "stop": 0
+                                    }
+                                  ],
+                                  "attachments": [],
+                                  "parameters": [],
+                                  "start": 1719080434585,
+                                  "stop": 0
+                                }
+                              ],
+                              "attachments": [],
+                              "parameters": [],
+                              "start": 1719080434585,
+                              "stop": 0
+                            }
+                          ],
+                          "attachments": [],
+                          "parameters": [],
+                          "start": 1719080434585,
+                          "stop": 0
+                        }
+                      ],
+                      "attachments": [],
+                      "parameters": [],
+                      "start": 1719080434585,
+                      "stop": 0
+                    }
+                  ],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1719080434582,
+                  "stop": 0
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1719080434581,
+              "stop": 0
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1719080434580,
+          "stop": 0
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080434579,
+      "stop": 0
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719080434578,
+  "stop": 1719080434586
+}

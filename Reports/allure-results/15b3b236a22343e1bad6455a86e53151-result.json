@@ -1,0 +1,337 @@
+{
+  "uuid": "cff59da8-b92f-47f1-a45a-ec0fbfc9f88f",
+  "historyId": "8b28b42251c830d1cd9af9d13f5279bb",
+  "testCaseId": "d13561403a9d63c8f8d337c1d5a3ac79",
+  "fullName": "PlaySpec1/Features/PlayActions/PlayActionTest1/Test Playwright Actions1",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "PlayActionTest1"
+    },
+    {
+      "name": "tag",
+      "value": "tag1"
+    }
+  ],
+  "links": [],
+  "name": "Test Playwright Actions1",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Target page, context or browser has been closed\n=========================== logs ===========================\nwaiting for navigation until \"Load\"\n  navigated to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"\n============================================================ -> Target page, context or browser has been closed",
+    "trace": "Microsoft.Playwright.PlaywrightException: Target page, context or browser has been closed\n=========================== logs ===========================\nwaiting for navigation until \"Load\"\n  navigated to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"\n============================================================\r\n ---> Microsoft.Playwright.TargetClosedException: Target page, context or browser has been closed\r\n   at Microsoft.Playwright.Core.Waiter.<>c__DisplayClass15_0`1.<RejectOnEvent>b__0(Task`1 _) in /_/src/Playwright/Core/Waiter.cs:line 142\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n--- End of stack trace from previous location ---\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.Playwright.Core.Waiter.WaitForPromiseAsync[T](Task`1 task, Action dispose) in /_/src/Playwright/Core/Waiter.cs:line 218\r\n   --- End of inner exception stack trace ---\r\n   at Microsoft.Playwright.Core.Waiter.WaitForPromiseAsync[T](Task`1 task, Action dispose) in /_/src/Playwright/Core/Waiter.cs:line 233\r\n   at Microsoft.Playwright.Core.Frame.WaitForNavigationInternalAsync(Waiter waiter, String url, Func`2 urlFunc, Regex urlRegex, String urlString, Nullable`1 waitUntil) in /_/src/Playwright/Core/Frame.cs:line 315\r\n   at Microsoft.Playwright.Core.Frame.RunAndWaitForNavigationAsync(Func`1 action, FrameRunAndWaitForNavigationOptions options) in /_/src/Playwright/Core/Frame.cs:line 273\r\n   at PlaySpec1.StepDef.PlayActionDemoSteps.clickUsingJs(Int32 delay) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\PlayActionDemoSteps.cs:line 128\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  user navigates to \"https://testautomationpractice.blogspot.com/\"",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "running",
+      "steps": [
+        {
+          "name": "When  Enter data in \"Name:\" label Textbox using \"Fill\" method",
+          "status": "none",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "running",
+          "steps": [
+            {
+              "name": "And  Enter data in \"Name:\" label Textbox using \"Type\" method",
+              "status": "none",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "running",
+              "steps": [
+                {
+                  "name": "And  press key combo ctrl and A",
+                  "status": "none",
+                  "statusDetails": {
+                    "known": false,
+                    "muted": false,
+                    "flaky": false
+                  },
+                  "stage": "running",
+                  "steps": [
+                    {
+                      "name": "And  Scroll To element",
+                      "status": "none",
+                      "statusDetails": {
+                        "known": false,
+                        "muted": false,
+                        "flaky": false
+                      },
+                      "stage": "running",
+                      "steps": [
+                        {
+                          "name": "When  perform drag and drop operation",
+                          "status": "none",
+                          "statusDetails": {
+                            "known": false,
+                            "muted": false,
+                            "flaky": false
+                          },
+                          "stage": "running",
+                          "steps": [
+                            {
+                              "name": "When  Get element diamension",
+                              "status": "none",
+                              "statusDetails": {
+                                "known": false,
+                                "muted": false,
+                                "flaky": false
+                              },
+                              "stage": "running",
+                              "steps": [
+                                {
+                                  "name": "When  scroll mouse forward 300 pixel verticalliy",
+                                  "status": "none",
+                                  "statusDetails": {
+                                    "known": false,
+                                    "muted": false,
+                                    "flaky": false
+                                  },
+                                  "stage": "running",
+                                  "steps": [
+                                    {
+                                      "name": "When  select multi elements in selectbox using option",
+                                      "status": "none",
+                                      "statusDetails": {
+                                        "known": false,
+                                        "muted": false,
+                                        "flaky": false
+                                      },
+                                      "stage": "running",
+                                      "steps": [
+                                        {
+                                          "name": "When  wait for 2 secs",
+                                          "status": "none",
+                                          "statusDetails": {
+                                            "known": false,
+                                            "muted": false,
+                                            "flaky": false
+                                          },
+                                          "stage": "running",
+                                          "steps": [
+                                            {
+                                              "name": "When  refresh the page",
+                                              "status": "none",
+                                              "statusDetails": {
+                                                "known": false,
+                                                "muted": false,
+                                                "flaky": false
+                                              },
+                                              "stage": "running",
+                                              "steps": [
+                                                {
+                                                  "name": "When  wait for 5 secs",
+                                                  "status": "none",
+                                                  "statusDetails": {
+                                                    "known": false,
+                                                    "muted": false,
+                                                    "flaky": false
+                                                  },
+                                                  "stage": "running",
+                                                  "steps": [
+                                                    {
+                                                      "name": "When  select single elements in selectbox using text value",
+                                                      "status": "none",
+                                                      "statusDetails": {
+                                                        "known": false,
+                                                        "muted": false,
+                                                        "flaky": false
+                                                      },
+                                                      "stage": "running",
+                                                      "steps": [
+                                                        {
+                                                          "name": "When  wait for 2 secs",
+                                                          "status": "none",
+                                                          "statusDetails": {
+                                                            "known": false,
+                                                            "muted": false,
+                                                            "flaky": false
+                                                          },
+                                                          "stage": "running",
+                                                          "steps": [
+                                                            {
+                                                              "name": "When  refresh the page",
+                                                              "status": "none",
+                                                              "statusDetails": {
+                                                                "known": false,
+                                                                "muted": false,
+                                                                "flaky": false
+                                                              },
+                                                              "stage": "running",
+                                                              "steps": [
+                                                                {
+                                                                  "name": "When  wait for 5 secs",
+                                                                  "status": "none",
+                                                                  "statusDetails": {
+                                                                    "known": false,
+                                                                    "muted": false,
+                                                                    "flaky": false
+                                                                  },
+                                                                  "stage": "running",
+                                                                  "steps": [
+                                                                    {
+                                                                      "name": "When  click link using javascript with 0 secs delay",
+                                                                      "status": "broken",
+                                                                      "statusDetails": {
+                                                                        "known": false,
+                                                                        "muted": false,
+                                                                        "flaky": false,
+                                                                        "message": "Target page, context or browser has been closed\n=========================== logs ===========================\nwaiting for navigation until \"Load\"\n  navigated to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"\n============================================================ -> Target page, context or browser has been closed",
+                                                                        "trace": "Microsoft.Playwright.PlaywrightException: Target page, context or browser has been closed\n=========================== logs ===========================\nwaiting for navigation until \"Load\"\n  navigated to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"\n============================================================\r\n ---> Microsoft.Playwright.TargetClosedException: Target page, context or browser has been closed\r\n   at Microsoft.Playwright.Core.Waiter.<>c__DisplayClass15_0`1.<RejectOnEvent>b__0(Task`1 _) in /_/src/Playwright/Core/Waiter.cs:line 142\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n--- End of stack trace from previous location ---\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.Playwright.Core.Waiter.WaitForPromiseAsync[T](Task`1 task, Action dispose) in /_/src/Playwright/Core/Waiter.cs:line 218\r\n   --- End of inner exception stack trace ---\r\n   at Microsoft.Playwright.Core.Waiter.WaitForPromiseAsync[T](Task`1 task, Action dispose) in /_/src/Playwright/Core/Waiter.cs:line 233\r\n   at Microsoft.Playwright.Core.Frame.WaitForNavigationInternalAsync(Waiter waiter, String url, Func`2 urlFunc, Regex urlRegex, String urlString, Nullable`1 waitUntil) in /_/src/Playwright/Core/Frame.cs:line 315\r\n   at Microsoft.Playwright.Core.Frame.RunAndWaitForNavigationAsync(Func`1 action, FrameRunAndWaitForNavigationOptions options) in /_/src/Playwright/Core/Frame.cs:line 273\r\n   at PlaySpec1.StepDef.PlayActionDemoSteps.clickUsingJs(Int32 delay) in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\StepDef\\PlayActionDemoSteps.cs:line 128\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+                                                                      },
+                                                                      "stage": "finished",
+                                                                      "steps": [],
+                                                                      "attachments": [],
+                                                                      "parameters": [],
+                                                                      "start": 1719080546019,
+                                                                      "stop": 1719080569924
+                                                                    },
+                                                                    {
+                                                                      "name": "When  wait for 2 secs",
+                                                                      "status": "skipped",
+                                                                      "statusDetails": {
+                                                                        "known": false,
+                                                                        "muted": false,
+                                                                        "flaky": false
+                                                                      },
+                                                                      "stage": "finished",
+                                                                      "steps": [],
+                                                                      "attachments": [],
+                                                                      "parameters": [],
+                                                                      "start": 1719080569925,
+                                                                      "stop": 1719080569925
+                                                                    }
+                                                                  ],
+                                                                  "attachments": [],
+                                                                  "parameters": [],
+                                                                  "start": 1719080541011,
+                                                                  "stop": 0
+                                                                }
+                                                              ],
+                                                              "attachments": [],
+                                                              "parameters": [],
+                                                              "start": 1719080533874,
+                                                              "stop": 0
+                                                            }
+                                                          ],
+                                                          "attachments": [],
+                                                          "parameters": [],
+                                                          "start": 1719080531848,
+                                                          "stop": 0
+                                                        }
+                                                      ],
+                                                      "attachments": [],
+                                                      "parameters": [],
+                                                      "start": 1719080531690,
+                                                      "stop": 0
+                                                    }
+                                                  ],
+                                                  "attachments": [],
+                                                  "parameters": [],
+                                                  "start": 1719080526679,
+                                                  "stop": 0
+                                                }
+                                              ],
+                                              "attachments": [],
+                                              "parameters": [],
+                                              "start": 1719080520264,
+                                              "stop": 0
+                                            }
+                                          ],
+                                          "attachments": [],
+                                          "parameters": [],
+                                          "start": 1719080518200,
+                                          "stop": 0
+                                        }
+                                      ],
+                                      "attachments": [],
+                                      "parameters": [],
+                                      "start": 1719080518024,
+                                      "stop": 0
+                                    }
+                                  ],
+                                  "attachments": [],
+                                  "parameters": [],
+                                  "start": 1719080515700,
+                                  "stop": 0
+                                }
+                              ],
+                              "attachments": [],
+                              "parameters": [],
+                              "start": 1719080515490,
+                              "stop": 0
+                            }
+                          ],
+                          "attachments": [],
+                          "parameters": [],
+                          "start": 1719080510113,
+                          "stop": 0
+                        }
+                      ],
+                      "attachments": [],
+                      "parameters": [],
+                      "start": 1719080507542,
+                      "stop": 0
+                    }
+                  ],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1719080504691,
+                  "stop": 0
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1719080503436,
+              "stop": 0
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1719080501655,
+          "stop": 0
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080487932,
+      "stop": 0
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719080487932,
+  "stop": 1719080569926
+}

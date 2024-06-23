@@ -36,7 +36,9 @@ namespace PlaySpec1.SpecHooks
                                        "--disable-gpu",
                                        "--no-sandbox"
                                      },
-                        Headless = this._isHeadless
+                        Headless = this._isHeadless,
+                        SlowMo=100
+                        
                     });
                     break;
             }

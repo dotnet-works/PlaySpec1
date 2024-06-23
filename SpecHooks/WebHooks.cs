@@ -27,13 +27,16 @@ namespace PlaySpec1.SpecHooks
         [BeforeTestRun]
         public static Task BeforeAll()
         {
-            //string projectRoot = Path.Combine(Directory.GetCurrentDirectory(), "../../../");
-            //string filePath = Path.Combine(projectRoot, "config.json");
-            //string jsonContent = File.ReadAllText(filePath);
-
-            //Config = JsonConvert.DeserializeObject<Config>(jsonContent)!;
-            //_browser = new Driver(Config.browser!).Browser;
-            _browser = new Driver("chromium",false).Browser;
+           
+            if (System.Environment.GetEnvironmentVariable("PIPERUN")=="True")
+            {
+                _browser = new Driver("chromium", true).Browser;
+            }
+            else
+            {
+                _browser = new Driver("chromium", false).Browser;
+            }
+            
             return Task.CompletedTask;
         }
 
@@ -44,8 +47,11 @@ namespace PlaySpec1.SpecHooks
             {
                 _context = await _browser.NewContextAsync(new BrowserNewContextOptions
                 {
-                    //ViewportSize = ViewportSize.NoViewport
-                    ViewportSize = new ViewportSize() { Width = 1280, Height = 1024 }
+                    ViewportSize = ViewportSize.NoViewport,
+                    RecordVideoDir="../../../videos",
+                    
+                    //ViewportSize = new ViewportSize() { Width = 1280, Height = 1024 }
+                    
 
                 });
 

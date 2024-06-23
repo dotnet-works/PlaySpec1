@@ -1,0 +1,180 @@
+{
+  "uuid": "78581f2c-18a8-4e9e-9ceb-01e9f7fcc46d",
+  "historyId": "a887b547dcac63ca2d01f9bf850f79f0",
+  "testCaseId": "2918de388e79e01e35e1b825403bdd43",
+  "fullName": "PlaySpec1/Features/SocialNet1 Tests/ParseDateTime2",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "SocialNet1 Tests"
+    }
+  ],
+  "links": [],
+  "name": "ParseDateTime2",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Target page, context or browser has been closed",
+    "trace": "Microsoft.Playwright.TargetClosedException: Target page, context or browser has been closed\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\r\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\r\n   at Allure.SpecFlowPlugin.SelectiveRun.SelectiveRunTestRunner.CollectScenarioErrors()\r\n   at PlaySpec1.Features.SocialNet1TestsFeature.ScenarioCleanup()\r\n   at PlaySpec1.Features.SocialNet1TestsFeature.ParseDateTime2() in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\Features\\Sample1SocialNet1.feature:line 53\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "When  dateformat input1 is \"20 Jan. 2000\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191784,
+      "stop": 1719080191784
+    },
+    {
+      "name": "When  dateformat input1 is \"20 March 2000\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191784,
+      "stop": 1719080191784
+    },
+    {
+      "name": "When  dateformat input1 is \"1 March 2000\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191785,
+      "stop": 1719080191785
+    },
+    {
+      "name": "When  dateformat input2 is \"4 March 2000\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191785,
+      "stop": 1719080191785
+    },
+    {
+      "name": "When  dateformat input2 is \"4 Dec. 2000\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191785,
+      "stop": 1719080191785
+    },
+    {
+      "name": "When  dateformat input2 is \"4 December 2000\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191785,
+      "stop": 1719080191785
+    },
+    {
+      "name": "When  dateformat input2 is \"01 Jan. 2005\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191785,
+      "stop": 1719080191785
+    },
+    {
+      "name": "When  dateformat input2 is \"01 January 2003\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191785,
+      "stop": 1719080191785
+    },
+    {
+      "name": "When  dateformat input2 is \"01 Jan 2011\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191785,
+      "stop": 1719080191785
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719080191784,
+  "stop": 1719080191785
+}

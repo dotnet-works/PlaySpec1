@@ -246,8 +246,6 @@ namespace PlaySpec1.StepDefs3
             string newUserName = $"{firstName}_{randValue}";
             string newUserEmail = $"{newUserName}@yopmail.com";
 
-
-
             await _page.Locator(_loginPage.TXTLoc_FirstName).ClickAsync();
             await _page.Locator(_loginPage.TXTLoc_FirstName).FillAsync(firstName);
             await _page.Locator(_loginPage.TXTLoc_LastName).FillAsync("Laaast");
@@ -267,6 +265,51 @@ namespace PlaySpec1.StepDefs3
                 _sharedContext.NEWUSEREMAIL = newUserEmail;
             }
         }
+
+        public async Task FillUserTextFeildData(bool RandomData=false,string? new_username=null)
+        {
+            string? firstName = null;
+            string? newUserName = null;
+            string? newUserEmail = null;
+            if (RandomData)
+            {
+                List<string> userList = new string[] { "Zulu", "Max", "Mint" }.ToList<string>();
+                Random randNum = new Random();
+                int userName = randNum.Next(0, userList.Count);
+                int randValue = randNum.Next(1000, 2000);
+
+                firstName = userList[userName];
+                newUserName = $"{firstName}{randValue}";
+                newUserEmail = $"{newUserName}@yopmail.com";
+            }
+            else
+            {
+                firstName = "Toon";
+                newUserName = $"{new_username}";
+                newUserEmail = $"{new_username}@yopmail.com";
+
+            }
+            await _page.Locator(_loginPage.TXTLoc_FirstName).ClickAsync();
+            await _page.Locator(_loginPage.TXTLoc_FirstName).FillAsync(firstName);
+            await _page.Locator(_loginPage.TXTLoc_LastName).FillAsync("Tester");
+            await _page.Locator(_loginPage.TXTLoc_Email).FillAsync(newUserEmail);
+            await _page.Locator(_loginPage.TXTLoc_ReEmail).FillAsync(newUserEmail);
+            await _page.Locator(_loginPage.TXTLoc_UserName).FillAsync(newUserName);
+            await _page.Locator(_loginPage.TXTLoc_Password).FillAsync("Test@1234");
+            await _page.Locator(_loginPage.RDLoc_Gender).ClickAsync();
+            await _page.Locator(_loginPage.CKLoc_Agree).ClickAsync();
+            //await _page.ScreenshotAsync(new() { Path = TestUtil.ScreenShotPath + $"newuser_{id}.png" });
+            //await _page.Locator(_loginPage.BTNLoc_Submit).ClickAsync();
+
+
+
+        }
+
+
+
+
+
+
         
         public async Task<bool> VerifyNewUserCreated()
         {
@@ -287,6 +330,17 @@ namespace PlaySpec1.StepDefs3
             return userResult;
             
         }
+
+
+
+
+
+
+
+
+
+
+
 
 
         [When(@"login with credentials using (.*) and (.*)")]
@@ -320,14 +374,10 @@ namespace PlaySpec1.StepDefs3
         {
 
         }
-
         public async Task enterUserDOB(string birthData)
         {
 
         }
-
-
-
         public async Task<IPage> SwitchTabs(string tabTitle, IBrowserContext BrowserCTX)
         {
             IPage? _page = null;

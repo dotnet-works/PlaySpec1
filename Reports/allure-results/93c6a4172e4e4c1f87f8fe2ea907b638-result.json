@@ -1,0 +1,125 @@
+{
+  "uuid": "3090180d-9706-4a09-988e-d08c9f793699",
+  "historyId": "d209c14299aa624f7a6bc5cd584b8ed9",
+  "testCaseId": "934f920981550177a410aaf2c9aa9f2f",
+  "fullName": "PlaySpec1/Features/PlayActions/PlayActionTest1/Test Handle Dialog Actions3",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-SRRVDGO"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "SpecFlow"
+    },
+    {
+      "name": "feature",
+      "value": "PlayActionTest1"
+    },
+    {
+      "name": "tag",
+      "value": "tag3"
+    }
+  ],
+  "links": [],
+  "name": "Test Handle Dialog Actions3",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Target page, context or browser has been closed\nBrowser logs:\n\n<launching> C:\\Users\\Admin\\AppData\\Local\\ms-playwright\\chromium-1117\\chrome-win\\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --start-maximized --disable-gpu --no-sandbox --user-data-dir=C:\\Users\\Admin\\AppData\\Local\\Temp\\playwright_chromiumdev_profile-XXXXXXBXPLyc --remote-debugging-pipe --no-startup-window\n<launched> pid=9828\n[pid=9828] <gracefully close start>",
+    "trace": "Microsoft.Playwright.TargetClosedException: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> C:\\Users\\Admin\\AppData\\Local\\ms-playwright\\chromium-1117\\chrome-win\\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades,PaintHolding --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --start-maximized --disable-gpu --no-sandbox --user-data-dir=C:\\Users\\Admin\\AppData\\Local\\Temp\\playwright_chromiumdev_profile-XXXXXXBXPLyc --remote-debugging-pipe --no-startup-window\n<launched> pid=9828\n[pid=9828] <gracefully close start>\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioStart()\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\r\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\r\n   at Allure.SpecFlowPlugin.SelectiveRun.SelectiveRunTestRunner.CollectScenarioErrors()\r\n   at PlaySpec1.Features.PlayActions.PlayActionTest1Feature.ScenarioCleanup()\r\n   at PlaySpec1.Features.PlayActions.PlayActionTest1Feature.TestHandleDialogActions3() in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\Features\\PlayActions\\PlayActions1.feature:line 46\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "description": "Playwright can interact with the web page dialogs \r\nsuch as alert, confirm, prompt as well as beforeunload confirmation.",
+  "steps": [
+    {
+      "name": "Given  user navigates to \"https://testautomationpractice.blogspot.com/\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191733,
+      "stop": 1719080191733
+    },
+    {
+      "name": "When  wait for 2 secs",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191733,
+      "stop": 1719080191733
+    },
+    {
+      "name": "When  click alert button",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191733,
+      "stop": 1719080191733
+    },
+    {
+      "name": "When  click on \"Confirm box\" button",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191733,
+      "stop": 1719080191733
+    },
+    {
+      "name": "When  wait for 1 secs",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191733,
+      "stop": 1719080191733
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1719080191732,
+  "stop": 1719080191734
+}

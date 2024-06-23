@@ -1,0 +1,29 @@
+{
+  "uuid": "d3f6fe36-370f-49d8-a1f9-1ec4171abc4a",
+  "children": [
+    "78581f2c-18a8-4e9e-9ceb-01e9f7fcc46d"
+  ],
+  "befores": [
+    {
+      "name": "BeforeScenario [10000]",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Target page, context or browser has been closed",
+        "trace": "Microsoft.Playwright.TargetClosedException: Target page, context or browser has been closed\r\n   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206\r\n   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532\r\n   at Microsoft.Playwright.Core.Browser.NewContextAsync(BrowserNewContextOptions options) in /_/src/Playwright/Core/Browser.cs:line 170\r\n   at PlaySpec1.SpecHooks.WebHooks.BeforeScenario() in E:\\DotnetWorks\\PlaySpecs\\PlaySpec1\\SpecHooks\\WebHooks.cs:line 53\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()\r\n   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeDelegateSynchronously(Delegate bindingDelegate, Object[] invokeArgs)\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.CallBaseInvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.MakeFixtureFromScenarioHook(Action`2 callLastHook, Action`1 startFixture, IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, HookBinding hook)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719080191771,
+      "stop": 1719080191784
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1719080191771,
+  "stop": 1719080191795
+}

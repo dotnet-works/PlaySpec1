@@ -1,7 +1,4 @@
 ﻿{
-  "BrowserName": "Chrome",
-  "ChromeOptions": [ "options1", "opt1", "options2", "" ],
-  "FirefoxOptions": [],
-  "HeadLess": true
+  
   
 }

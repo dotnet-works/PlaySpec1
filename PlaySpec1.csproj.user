@@ -11,6 +11,9 @@
     <Compile Update="SpecHooks\SharedContext.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="StepDef\PlayActionDemoSteps.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="StepDef\SocialNetSteps2.cs">
       <SubType>Code</SubType>
     </Compile>
